@@ -1,0 +1,35 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="container", style="margin-top: 100px">
+<div class="card-deck">
+  <div class="card">
+    <img src="{% static 'mysite/images/music.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Music Player</h5>
+      <p class="card-text">This is a Music Player.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'mysite/images/space.png' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Space Invader</h5>
+      <p class="card-text">This is a Spade Invader Game.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{% static 'mysite/images/pong.png' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Ping Pong</h5>
+      <p class="card-text">This is a Ping Pong game.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+
+{% endblock %}
